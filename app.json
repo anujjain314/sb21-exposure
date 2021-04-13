@@ -1,0 +1,12 @@
+{
+  "name": "sb21-exposure",
+  "displayName": "sb21-exposure",
+  "expo": {
+    "name": "sb21-exposure",
+    "slug": "sb21-exposure",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
