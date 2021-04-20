@@ -6,7 +6,7 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 function Discover() {
   return (
     <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-      <Text>Discover!</Text>
+      <Text>Discover -- anuj!</Text>
     </View>
   );
 }
