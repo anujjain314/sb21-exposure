@@ -6,7 +6,7 @@ export default class Profile extends Component {
     return (
       <View style={styles.container}>
         <Text style={{ color: "black", fontSize: 30, fontWeight: "700" }}>
-          Profile page s
+          Profile
         </Text>
       </View>
     );

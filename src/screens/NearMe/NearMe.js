@@ -6,7 +6,7 @@ export default class NearMe extends Component {
     return (
       <View style={styles.container}>
         <Text style={{ color: "black", fontSize: 30, fontWeight: "700" }}>
-          Near Me s page
+          Near Me
         </Text>
       </View>
     );
