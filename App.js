@@ -3,39 +3,39 @@ import { Text, View, Image } from "react-native";
 import { NavigationContainer } from "@react-navigation/native";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 
-import DiscoverIcon from "./src/assets/discover.png";
-import NearMeIcon from "./src/assets/nearMe.png";
-import ProfileIcon from "./src/assets/profile.png"
+// import DiscoverIcon from "./src/assets/discover.png";
+// import NearMeIcon from "./src/assets/nearMe.png";
+// import ProfileIcon from "./src/assets/profile.png"
 
-function Discover() {
-    return (
-        <View
-            style={{ flex: 1, justifyContent: "center", alignItems: "center" }}
-        >
-            <Text>Discover -- anuj!</Text>
-        </View>
-    );
-}
+// function Discover() {
+//     return (
+//         <View
+//             style={{ flex: 1, justifyContent: "center", alignItems: "center" }}
+//         >
+//             <Text>Discover -- anuj!</Text>
+//         </View>
+//     );
+// }
 
-function nearMe() {
-    return (
-        <View
-            style={{ flex: 1, justifyContent: "center", alignItems: "center" }}
-        >
-            <Text>Near Me!</Text>
-        </View>
-    );
-}
+// function nearMe() {
+//     return (
+//         <View
+//             style={{ flex: 1, justifyContent: "center", alignItems: "center" }}
+//         >
+//             <Text>Near Me!</Text>
+//         </View>
+//     );
+// }
 
-function profile() {
-    return (
-        <View
-            style={{ flex: 1, justifyContent: "center", alignItems: "center" }}
-        >
-            <Text>Profile!</Text>
-        </View>
-    );
-}
+// function profile() {
+//     return (
+//         <View
+//             style={{ flex: 1, justifyContent: "center", alignItems: "center" }}
+//         >
+//             <Text>Profile!</Text>
+//         </View>
+//     );
+// }
 
 const Tab = createBottomTabNavigator();
 
