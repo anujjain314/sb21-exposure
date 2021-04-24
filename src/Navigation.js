@@ -56,8 +56,8 @@ export default class Navigation extends Component {
 
   NearMeNavigation = (props) => {
     return (
-      <NearMeStack.Navigator initialRouteName="NearMe">
-        <NearMeStack.Screen name="NearMe" component={NearMe} />
+      <NearMeStack.Navigator initialRouteName="Near Me">
+        <NearMeStack.Screen name="Near Me" component={NearMe} />
       </NearMeStack.Navigator>
     );
   };
@@ -67,7 +67,7 @@ export default class Navigation extends Component {
       <ProfileStack.Navigator initialRouteName="Profile">
         <ProfileStack.Screen name="Profile" component={Profile} />
       </ProfileStack.Navigator>
-    );
+    );sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss
   };
 
   TabNavigation = (props) => {
