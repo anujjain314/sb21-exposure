@@ -72,22 +72,22 @@ export default class Navigation extends Component {
 
   TabNavigation = (props) => {
     return (
-      <Tab.Navigator tabBarOptions={{ style: { height: 90, paddingTop: 10 }} }>
+      <Tab.Navigator tabBarOptions={{ style: { height: 90, paddingTop: 10 } }}>
         <Tab.Screen
           {...(props) => <DiscoverNavigation {...props} />}
           name="Discover"
           component={this.DiscoverNavigation}
-          options={{tabBarIcon: () => <Image source={DiscoverIcon} />}}
+          options={{ tabBarIcon: () => <Image source={DiscoverIcon} /> }}
         />
-        <Tab.Screen 
-            name="Post" 
-            component={this.NearMeNavigation} 
-            options={{tabBarIcon: () => <Image source={NearMeIcon} />}}
+        <Tab.Screen
+          name="Near Me"
+          component={this.NearMeNavigation}
+          options={{ tabBarIcon: () => <Image source={NearMeIcon} /> }}
         />
-        <Tab.Screen 
-            name="Profile" 
-            component={this.ProfileNavigation} 
-            options={{tabBarIcon: () => <Image source={ProfileIcon} />}}
+        <Tab.Screen
+          name="Profile"
+          component={this.ProfileNavigation}
+          options={{ tabBarIcon: () => <Image source={ProfileIcon} /> }}
         />
       </Tab.Navigator>
     );
