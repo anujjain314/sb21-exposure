@@ -9,10 +9,6 @@ import Discover from "./screens/Discover/Discover";
 import NearMe from "./screens/NearMe/NearMe";
 import Profile from "./screens/Profile/Profile";
 
-import DiscoverIcon from "./src/assets/discover.png";
-import NearMeIcon from "./src/assets/nearMe.png";
-import ProfileIcon from "./src/assets/profile.png"
-
 const AuthStack = createStackNavigator();
 const DiscoverStack = createStackNavigator();
 const NearMeStack = createStackNavigator();
