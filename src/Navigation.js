@@ -4,7 +4,7 @@ import { createStackNavigator } from "@react-navigation/stack";
 import { NavigationContainer } from "@react-navigation/native";
 
 //import screens
-import Login from "./screens/Login/Login";
+// import Login from "./screens/Login/Login";
 import Discover from "./screens/Discover/Discover";
 import NearMe from "./screens/NearMe/NearMe";
 import Profile from "./screens/Profile/Profile";
@@ -28,12 +28,12 @@ export default class Navigation extends Component {
   AuthNavigation = (props) => {
     return (
       <AuthStack.Navigator
-        initialRouteName="Login"
+        initialRouteName="Home"
         screenOptions={{ headerShown: false }}
       >
-        <AuthStack.Screen name="Login">
-          {(props) => <Login {...props} />}
-        </AuthStack.Screen>
+        {/* <AuthStack.Screen name="Login">
+          {(props) => <Discover {...props} />}
+        </AuthStack.Screen> */}
         <AuthStack.Screen
           {...(props) => <TabNavigation {...props} />}
           name="Home"
