@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Text, View, Image } from "react-native";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import { createStackNavigator } from "@react-navigation/stack";
 import { NavigationContainer } from "@react-navigation/native";
@@ -8,13 +9,15 @@ import { NavigationContainer } from "@react-navigation/native";
 import Discover from "./screens/Discover/Discover";
 import NearMe from "./screens/NearMe/NearMe";
 import Profile from "./screens/Profile/Profile";
+import DiscoverIcon from "./assets/discover.png";
+import NearMeIcon from "./assets/nearMe.png";
+import ProfileIcon from "./assets/profile.png";
 
 const AuthStack = createStackNavigator();
 const DiscoverStack = createStackNavigator();
 const NearMeStack = createStackNavigator();
 const ProfileStack = createStackNavigator();
 const Tab = createBottomTabNavigator();
-
 export default class Navigation extends Component {
   constructor(props) {
     super(props);
@@ -69,14 +72,23 @@ export default class Navigation extends Component {
 
   TabNavigation = (props) => {
     return (
-      <Tab.Navigator>
+      <Tab.Navigator tabBarOptions={{ style: { height: 90, paddingTop: 10 }} }>
         <Tab.Screen
           {...(props) => <DiscoverNavigation {...props} />}
           name="Discover"
           component={this.DiscoverNavigation}
+          options={{tabBarIcon: () => <Image source={DiscoverIcon} />}}
         />
-        <Tab.Screen name="Post" component={this.NearMeNavigation} />
-        <Tab.Screen name="Profile" component={this.ProfileNavigation} />
+        <Tab.Screen 
+            name="Post" 
+            component={this.NearMeNavigation} 
+            options={{tabBarIcon: () => <Image source={NearMeIcon} />}}
+        />
+        <Tab.Screen 
+            name="Profile" 
+            component={this.ProfileNavigation} 
+            options={{tabBarIcon: () => <Image source={ProfileIcon} />}}
+        />
       </Tab.Navigator>
     );
   };
